@@ -1,10 +1,13 @@
 body {
-	font-family: arial;
+	font-family: fantasy;
 	background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrbH60ymeyBEUPf-OP57iuInM1Cydi1fwe1AWBMP0QN6N9wjuPYQ');
-	background-position: center center;
 }
+
 h1 {
-	color: rgb(234,0,50);}
+	color: rgb(246, 252, 12);
+    font-size: 300%;
+    text-align: center;
+}
 
 ul {
 	text-align: justify;
@@ -27,9 +30,15 @@ a {
 }
 
 p {
-	color: rgb(234,0,50);
+	color: rgb(231, 22, 86);
+    text-align: center;
+    font-size: 250%;
+    padding-top: 3%;
 }
 
 #Winner {
     color: white;
+    font-size: 300%;
+    text-align: center;
+    margin-top: -60px;
 }

@@ -48,7 +48,7 @@ describe('RockPaperScissors', function(){
 		});
 
 		it('rock vs rock should be a draw', function(){
-			expect(rules.winningChoiceOf(rock, rock)).toBe(draw)
+			expect(rules.winningChoiceOf(rock, rock)).toEqual(draw)
 		});
 	});
 
