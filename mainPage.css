@@ -1,0 +1,35 @@
+body {
+	font-family: arial;
+	background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrbH60ymeyBEUPf-OP57iuInM1Cydi1fwe1AWBMP0QN6N9wjuPYQ');
+	background-position: center center;
+}
+h1 {
+	color: rgb(234,0,50);}
+
+ul {
+	text-align: justify;
+}
+ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ul:before {
+    content: '';
+    display: block;
+    margin-top: -1.25em;
+}
+a {
+    display: inline-block;
+    margin-right: -.25em;
+    position: relative;
+    top: 1.25em;
+}
+
+p {
+	color: rgb(234,0,50);
+}
+
+#Winner {
+    color: white;
+}
