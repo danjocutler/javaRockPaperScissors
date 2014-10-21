@@ -24,16 +24,33 @@ describe('RockPaperScissors', function(){
 
 	describe('Rules', function(){
 		it('rock should beat scissors', function() {
-			expect(rules.winningChoiceOf(scissors, rock)).toBe(rock);
+			expect(rules.winningChoiceOf(rock, scissors)).toBe(rock);
 		});
 
 		it('scissors should not beat rock', function() {
-			expect(rules.winningChoiceOf(rock, scissors)).toBe(rock)
+			expect(rules.winningChoiceOf(scissors, rock)).toBe(rock)
+		});
+
+		it('paper should beat rock', function(){
+			expect(rules.winningChoiceOf(paper, rock)).toBe(paper)
+		});
+
+		it('paper should not beat rock', function(){
+			expect(rules.winningChoiceOf(rock, paper)).toBe(paper)
+		});
+
+		it('scissors should beat paper', function(){
+			expect(rules.winningChoiceOf(scissors, paper)).toBe(scissors)
+		});
+
+		it('paper should not beat scissors', function(){
+			expect(rules.winningChoiceOf(paper, scissors)).toBe(scissors)
 		});
 
 		it('rock vs rock should be a draw', function(){
 			expect(rules.winningChoiceOf(rock, rock)).toBe(draw)
 		});
-
 	});
+
+	
 });

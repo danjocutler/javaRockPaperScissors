@@ -7,12 +7,19 @@ function Paper() {
 function Scissors() {
 	this.type = "Scissors"
 };
-function Rules() {};
+function Rules() {
+	this.trump = {"Rock": {"Scissors": "beats"},
+							  "Paper": {"Rock": "beats"},
+						  	"Scissors": {"Paper": "beats"}
+							 };
+};
 function Draw() {};
 
 Rules.prototype.winningChoiceOf = function(choice1, choice2) {
-	if(choice1 === choice2) 
-		return draw
-	else 
-		return rock
+	if(choice1.type === choice2.type) 
+		return draw;
+	else if (choice2.type in this.trump[choice1.type])
+		return choice1;
+	else
+		return choice2;
 };
