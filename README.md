@@ -10,4 +10,5 @@ Used jquery, html and css for it to function on the web.
 
 --------------------------------
 
-To use: open SpecRunner.html
+To check jasmine tests: open SpecRunner.html
+To run program:         open mainPage.html
