@@ -10,10 +10,10 @@ $('input').each(function() {
 		var rules = new Rules;
 		var winner = rules.winningChoiceOf($(this).data(), $(computerChoice).data())
 		if(winner === $(this).data())
-				$('#Winner').text("You win");
+			$('#Winner').text("You win");
 		else if (winner === $(computerChoice).data())
 			$('#Winner').text("computer wins");
 		else
 			$('#Winner').text("It's a draw!");
 	});
-	});
+});

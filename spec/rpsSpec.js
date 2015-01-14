@@ -1,11 +1,11 @@
 describe('RockPaperScissors', function(){
 
 	beforeEach( function(){
-			rock = new Rock;
-			paper = new Paper
-			scissors = new Scissors;
-			rules = new Rules;
-			draw = new Draw;		
+		rock = new Rock;
+		paper = new Paper
+		scissors = new Scissors;
+		rules = new Rules;
+		draw = new Draw;		
 	});
 
 	describe('Gestures', function(){
@@ -52,5 +52,4 @@ describe('RockPaperScissors', function(){
 		});
 	});
 
-	
 });
